@@ -8,34 +8,39 @@
 </head>
 <body>
   <form action="form.html" method="POST">
+
     <fieldset>
-      <legend>Names & Addresses</legend>
-      <label for="full-name">What is your name?</label>
+      <legend>Contact Information</legend>
       <input type="text" id="first-name" placeholder="First Name">
       <input type="text" id="middle-initial" placeholder="Middle Initial">
       <input type="text" id="last-name" placeholder="Last Name">
       <br/>
-      <label for="address">What is your home address?</label>
       <input type="text" id="street-number" placeholder="Street Address">
       <input type="text" id="city" placeholder="City">
       <input type="text" id="state" placeholder="State">
       <input type="text" id="zipcode" placeholder="Zip Code">
       <br/>
-      <label for="occupation">What is your current occupation?</label>
-      <input type="text" id="occupation" placeholder="Occupation">
-      <br/>
-      <label for="employer">Who is your current employer?</label>
-      <input type="text" id="employer" placeholder="Current Employer">
-      <br/>
-      <label for="employer-address">What is your employer's address</label>
-      <input type="text" id="em-street-number" placeholder="500 Interstate Blvd S">
-      <input type="text" id="em-city" placeholder="Nashville">
-      <input type="text" id="em-state" placeholder="TN">
-      <input type="text" id="em-zipcode" placeholder="37211">
+      <input type="tel" id="phone-number" placeholder="Phone Number">
+      <input type="email" id="email" placeholder="Email Address">
+      <input type="url" id="LinkedIn" placeholder="LinkedIn Address">
     </fieldset>
 
     <fieldset>
-      <legend>Loan Type</legend>
+      <legend>Employment Information</legend>
+      <input type="text" id="occupation" placeholder="Occupation">
+      <br/>
+      <input type="text" id="employer" placeholder="Current Employer">
+      <br/>
+      <input type="text" id="em-street-number" placeholder="Employer's Address">
+      <input type="text" id="em-city" placeholder="City">
+      <input type="text" id="em-state" placeholder="State">
+      <input type="text" id="em-zipcode" placeholder="Zip Code">
+    </fieldset>
+
+    <br/>
+
+    <fieldset>
+      <legend>Loan Type/Amount</legend>
       <input name="loan" list="loan-type" placeholder="        -- Drop Down --  ">
       <datalist id="loan-type">
         <option value="Commercial">
@@ -43,9 +48,7 @@
         <option value="Personal">
         <option value="Mortgage">
       </datalist>
-      <br/>
-      <label for="amount">Requested amount of loan?</label>
-      <input type="number" id="loan-amount" placeholder="$5000">
+      <input type="number" id="loan-amount" placeholder="Requested Amount">
     </fieldset>
 
     <fieldset>
@@ -64,16 +67,16 @@
       <input type="checkbox" name="married" value="married"> Married
     </fieldset>
 
+    <br/>
+
     <fieldset>
       <legend>Comments?</legend>
-      <<textarea name="comments" rows="5" cols="60" placeholder="Please provide your feedback here"></textarea>
+      <<textarea name="comments" rows="5" cols="60" placeholder="Please provide any additional information here"></textarea>
     </fieldset>
 
-     <fieldset>
+    <br/>
 
-
-
-     </fieldset>
+    <input type="submit" value="Submit Information"></input>
 
   </form>
 </body>
