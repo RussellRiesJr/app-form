@@ -9,17 +9,17 @@
 <body>
   <form action="form.html" method="POST">
     <fieldset>
-      <legend>Applicant Form</legend>
-      <label for="first-name">What is your name?</label>
+      <legend>Names & Addresses</legend>
+      <label for="full-name">What is your name?</label>
       <input type="text" id="first-name" placeholder="First Name">
-      <input type="text" id="middle-initial" placeholder="M">
+      <input type="text" id="middle-initial" placeholder="Middle Initial">
       <input type="text" id="last-name" placeholder="Last Name">
       <br/>
       <label for="address">What is your home address?</label>
-      <input type="text" id="street-number" placeholder="500 Interstate Blvd S">
-      <input type="text" id="city" placeholder="Nashville">
-      <input type="text" id="state" placeholder="TN">
-      <input type="number" id="zipcode" placeholder="37211">
+      <input type="text" id="street-number" placeholder="Street Address">
+      <input type="text" id="city" placeholder="City">
+      <input type="text" id="state" placeholder="State">
+      <input type="text" id="zipcode" placeholder="Zip Code">
       <br/>
       <label for="occupation">What is your current occupation?</label>
       <input type="text" id="occupation" placeholder="Occupation">
@@ -28,16 +28,15 @@
       <input type="text" id="employer" placeholder="Current Employer">
       <br/>
       <label for="employer-address">What is your employer's address</label>
-      <input type="text" id="street-number" placeholder="500 Interstate Blvd S">
-      <input type="text" id="city" placeholder="Nashville">
-      <input type="text" id="state" placeholder="TN">
-      <input type="number" id="zipcode" placeholder="37211">
+      <input type="text" id="em-street-number" placeholder="500 Interstate Blvd S">
+      <input type="text" id="em-city" placeholder="Nashville">
+      <input type="text" id="em-state" placeholder="TN">
+      <input type="text" id="em-zipcode" placeholder="37211">
     </fieldset>
 
     <fieldset>
       <legend>Loan Type</legend>
-
-      <input name="loan" list="loan-type">
+      <input name="loan" list="loan-type" placeholder="        -- Drop Down --  ">
       <datalist id="loan-type">
         <option value="Commercial">
         <option value="Real Estate">
@@ -51,13 +50,30 @@
 
     <fieldset>
       <legend>Loan Length</legend>
-
       <input type="radio" name="length-type" value="5-years"> 5 Years
       <input type="radio" name="length-type" value="15-years"> 15 Years
       <input type="radio" name="length-type" value="30-years"> 30 Years
-
     </fieldset>
 
+    <fieldset>
+      <legend>Please check any special conditions that apply</legend>
+      <input type="checkbox" name="down-play" value="down-pay"> I have a down payment
+      <input type="checkbox" name="out-state" value="out-state"> Out-of-state resident
+      <br/>
+      <input type="checkbox" name="co-signed" value="co-signed"> Loan was co-signed
+      <input type="checkbox" name="married" value="married"> Married
+    </fieldset>
+
+    <fieldset>
+      <legend>Comments?</legend>
+      <<textarea name="comments" rows="5" cols="60" placeholder="Please provide your feedback here"></textarea>
+    </fieldset>
+
+     <fieldset>
+
+
+
+     </fieldset>
 
   </form>
 </body>
