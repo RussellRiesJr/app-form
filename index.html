@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Applicant Form</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <form action="form.html" method="POST">
+    <fieldset>
+      <legend>Applicant Form</legend>
+      <label for="first-name">What is your name?</label>
+      <input type="text" id="first-name" placeholder="First Name">
+      <input type="text" id="middle-initial" placeholder="M">
+      <input type="text" id="last-name" placeholder="Last Name">
+      <br/>
+      <label for="address">What is your home address?</label>
+      <input type="text" id="street-number" placeholder="500 Interstate Blvd S">
+      <input type="text" id="city" placeholder="Nashville">
+      <input type="text" id="state" placeholder="TN">
+      <input type="number" id="zipcode" placeholder="37211">
+      <br/>
+      <label for="occupation">What is your current occupation?</label>
+      <input type="text" id="occupation" placeholder="Occupation">
+      <br/>
+      <label for="employer">Who is your current employer?</label>
+      <input type="text" id="employer" placeholder="Current Employer">
+      <br/>
+      <label for="employer-address">What is your employer's address</label>
+      <input type="text" id="street-number" placeholder="500 Interstate Blvd S">
+      <input type="text" id="city" placeholder="Nashville">
+      <input type="text" id="state" placeholder="TN">
+      <input type="number" id="zipcode" placeholder="37211">
+    </fieldset>
+
+    <fieldset>
+      <legend>Loan Type</legend>
+
+      <input name="loan" list="loan-type">
+      <datalist id="loan-type">
+        <option value="Commercial">
+        <option value="Real Estate">
+        <option value="Personal">
+        <option value="Mortgage">
+      </datalist>
+      <br/>
+      <label for="amount">Requested amount of loan?</label>
+      <input type="number" id="loan-amount" placeholder="$5000">
+    </fieldset>
+
+    <fieldset>
+      <legend>Loan Length</legend>
+
+      <input type="radio" name="length-type" value="5-years"> 5 Years
+      <input type="radio" name="length-type" value="15-years"> 15 Years
+      <input type="radio" name="length-type" value="30-years"> 30 Years
+
+    </fieldset>
+
+
+  </form>
+</body>
+</html>
